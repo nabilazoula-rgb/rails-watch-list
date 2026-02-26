@@ -10,3 +10,29 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.banner {
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
